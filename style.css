@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1920px;
+    height: 1000px;
+}
+.container::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+[class*="col"] {
+    border: 1px solid blue;
+    float: left;
+    height: 100px;
+}
+.col-12 {
+    background-color: lightgreen;
+    width: 100%;
+}
+.col-6 {
+    width: 50%;
+    background-color: green;
+}
+.col-5{
+    width: calc((100% / 12) *5);
+    background-color: purple;
+}
+.col-4 {
+    background-color: yellow;
+    width: calc(100% / 3);
+}
+.col-3 {
+    background-color: red;
+    width: calc(100% /4);
+}
+.col-1 {
+    width: calc(100% / 12);
+    background-color: orange;
+}
+.offset5L {
+    margin-left: calc(100% / 20);
+}
+.offset5R {
+    margin-left: calc(100% / 20);
+}
+.offset1 {
+    margin-left: calc(100% / 15);
+}
